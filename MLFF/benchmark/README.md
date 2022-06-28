@@ -10,7 +10,7 @@ unseen data. Note that this is the only way to build true confidence in the MLFF
 
 ### Seen Data
 1. Run `parse_regfile.sh`, which greps useful data and prints the number of DFT calculations performed 
-(also a good indicator).
-2. .Run `mae_rmse.py`, which prints the errors.
+(also a good indicator on whether the MLFF has been trained enough or not).
+2. Run `mae_rmse.py`, which prints errors on energies, forces, and stresses.
 
 ### Unseen Data
