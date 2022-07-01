@@ -3,4 +3,4 @@ A collection of tips, scripts, tools and files to improve your workflow, or simp
 
 ## Workflows
 You can find workflows to:
-1. Benchmark an MLFF by calculating erros on both data that was seen during training, and data that was not seen during training. 
+1. Benchmark an MLFF by calculating erros on both data that was _seen_ during training, and data that was _not seen_ during training. 
