@@ -1,5 +1,5 @@
 # The importance of benchmarking
-The only way you can have confidence in the results produced by a newly training MLFF is by benchmarking it.
+The only way you can have confidence in the results produced by a newly trained Machine Learning Force Field (MLFF) is by benchmarking it.
 There are two ways to benchmarking an MLFF:
 1. Against data that was seen during training.
 2. Against data that was not seen during training.
