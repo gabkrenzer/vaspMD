@@ -23,5 +23,8 @@ Good practice involves first benchmarking against seen data. Once satisfied, the
 8. Run `parse_fe.py` to write energies and forces into files.
 9. Run `mae_rmse.py` to calculate MAE, RMSE, and MaxAE on energies and forces.
 
+## Further Benchmarking
+Further benchmarking is encouraged.  For instance, one can benchmark an MLFF against the harmonic phonon dispersion, mean square displacements, or radial disribution functions.
+
 # Acknowledgments 
 `parse_regfile.sh` and `mae_rmse.py` are adapted from codes that were initially written by Johan Klarbring.
