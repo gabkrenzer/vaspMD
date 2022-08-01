@@ -17,7 +17,7 @@ Good practice involves first benchmarking against seen data. Once satisfied, the
 2. Run `mega_sub.sh`, which is an example submission script.
 3. Once the AIMD simulations are finished, run `rng_structures.py` to randomly select structures from the AIMD simulations at each temperature.
 4. Store the structure files in directory `structures` in the working directory.
-5. Prepare new input files to run single-point calculations.
+5. Prepare new input files to run single-point calculations. Example INCARs are attached as `INCAR_DFT` and `INCAR_MLFF`
 6. Run `sp.sh`, which is an example submission script to submit single-point calculations using the MLFF and DFT.
 7. Once the single-point calculations are finished, run `grep_fe.sh` to grep forces and energies.
 8. Run `parse_fe.py` to write energies and forces into files.
