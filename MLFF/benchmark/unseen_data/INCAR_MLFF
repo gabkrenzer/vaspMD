@@ -1,0 +1,13 @@
+IBRION = -1
+PREC = Normal
+NSW = 0 (Nb of ionic steps)
+NBLOCK = 1
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+
+ENCUT = 1
+
+NCORE = 12
+
+ML_LMLFF = .TRUE.
+ML_ISTART = 2
