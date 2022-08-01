@@ -1,0 +1,19 @@
+IBRION = -1
+ISIF = 0
+PREC = Normal
+NSW = 0
+NBLOCK = 1
+EDIFF = 1E-6
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+
+ISYM = 0
+ENCUT = ###
+NELM = 50  (Max nb of electronic SC steps)
+ISMEAR = 0
+SIGMA = 0.01
+LREAL = Auto
+ADDGRID = .TRUE.
+GGA = PS (PBEsol functional)
+
+NCORE = 12
