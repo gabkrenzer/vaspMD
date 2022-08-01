@@ -5,7 +5,7 @@ for T in #new_temperatures_directories
 do 
 	echo $T
 	mkdir $T 
-	cp INCAR KPOINTS POTCAR ML_FF mlff_sp.job $T
+	cp INCAR_MLFF KPOINTS POTCAR ML_FF mlff_sp.job $T
         cp INCAR_DFT dft_sp.job $T
         cp structures/${T}POSCAR* $T
 	cd $T
@@ -13,8 +13,9 @@ do
 	do
 		echo $NUM
 		mkdir $NUM
-		cp INCAR KPOINTS POTCAR ML_FF mlff_sp.job $NUM
+		cp INCAR_MLFF KPOINTS POTCAR ML_FF mlff_sp.job $NUM
 		mv ${T}POSCAR$NUM $NUM/POSCAR
+		mv INCAR_MLFF INCAR
 		mkdir ${NUM}/DFT
 	        cp dft_sp.job ${NUM}/DFT
                 cp INCAR_DFT ${NUM}/DFT/INCAR
