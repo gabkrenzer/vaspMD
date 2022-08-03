@@ -5,7 +5,7 @@ The heat capacity can be extracted from Molecular Dynamics (MD) simulations run 
 Both methods should give the same result.
   
 # Workflow
-An example jupyter notebook is provided with example files as part of this workflow, please check it out for more details.
+A case study including example files is provided with the jupyter notebook, please check it out for more details.
   
 1. Run `incars.py` in your working directory to prepare directories for MD runs. Note that to reduce noise and improve accuracy, large cells and long simulation times may be reauired. Such long simulations times may only be accessible using machine-learning-force-fields.
 2. Submit jobs.
