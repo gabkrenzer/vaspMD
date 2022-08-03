@@ -1,8 +1,17 @@
 # Heat Capacity Calculations From Molecular Dynamics
-
 The heat capacity can be extracted from Molecular Dynamics (MD) simulations run at different temperatures using two different methods:
 1. Computing the numerical derivative of energy, $E$, with respect to temperature, $T$: $C=\frac{dE}{dT}$.
-2. Using the equation: $C_v=\frac{(<E^2>-<E>^2)}{k_BT^2}$.
-Both methods should give the same result. hey
+2. Using the equation: $C_v=\frac{<E^2>-<E>^2}{k_BT^2}$.
+Both methods should give the same result.
   
+# Workflow
+An example jupyter notebook is provided with example files as part of this workflow, please check it out for more details.
   
+1. Run `incars.py` in your working directory to prepare directories for MD runs.
+2. Submit jobs.
+3. Once the calculations are finished, run `tdev.txt` to obtgain the standard deviation from mean temperatures of the MD runs. Then, visualise thermal fluctuations in the jupyter notebook. You may need to increase the temperature resolution and go back to 1. If the temperature resolution you chose in 1. is good enough, you can proceed to 4.
+4. Run `c_numder.py` and/or `c_mssm.py` to obtain the heat capacity data.
+5. Visualise, compare, and smooth the data using the jupyter notebook.
+  
+# Acknowledgments
+This workflow was developed with the help of Kasper Tolborg and Johan Klarbring. 
