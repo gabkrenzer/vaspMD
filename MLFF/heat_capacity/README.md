@@ -7,7 +7,7 @@ Both methods should give the same result.
 # Workflow
 An example jupyter notebook is provided with example files as part of this workflow, please check it out for more details.
   
-1. Run `incars.py` in your working directory to prepare directories for MD runs.
+1. Run `incars.py` in your working directory to prepare directories for MD runs. Note that to reduce noise and improve accuracy, large cells and long simulation times may be reauired. Such long simulations times may only be accessible using machine-learning-force-fields.
 2. Submit jobs.
 3. Once the calculations are finished, run `tdev.txt` to obtain the standard deviation from mean temperatures of the MD runs. Then, visualise thermal fluctuations in the jupyter notebook. You may need to increase the temperature resolution and go back to 1. If the temperature resolution you chose in 1. is equal or superior to the suggested temperature resolution, then you can proceed to 4.
 4. Obtain the heat capacity data runnning `c_numder.py` and/or `c_mssm.py` using `TSTEP` suggested from thermal fluctuations.
