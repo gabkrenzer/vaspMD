@@ -9,7 +9,7 @@ An example jupyter notebook is provided with example files as part of this workf
   
 1. Run `incars.py` in your working directory to prepare directories for MD runs.
 2. Submit jobs.
-3. Once the calculations are finished, run `tdev.txt` to obtgain the standard deviation from mean temperatures of the MD runs. Then, visualise thermal fluctuations in the jupyter notebook. You may need to increase the temperature resolution and go back to 1. If the temperature resolution you chose in 1. is good enough, you can proceed to 4.
+3. Once the calculations are finished, run `tdev.txt` to obtain the standard deviation from mean temperatures of the MD runs. Then, visualise thermal fluctuations in the jupyter notebook. You may need to increase the temperature resolution and go back to 1. If the temperature resolution you chose in 1. is good enough, you can proceed to 4.
 4. Run `c_numder.py` and/or `c_mssm.py` to obtain the heat capacity data.
 5. Visualise, compare, and smooth the data using the jupyter notebook.
   
