@@ -26,7 +26,8 @@ Good practice involves first benchmarking against seen data. Once satisfied, the
 ## Further Benchmarking
 Further benchmarking is encouraged.  For instance, one can benchmark an MLFF against the harmonic phonon dispersion, mean square displacements, or radial distribution functions.
 
-Because we are never cautious enough, it is highly recommended to also check the Bayesian errors of the production runs. You can do so by running `BEEFgrep.sh` in your working directory and plot the Bayesian errors in the notebook exemple. 
+## Production Runs
+Because we are never cautious enough, it is highly recommended to also check the Bayesian errors of the production runs. Run `BEEFgrep.sh` in your working directory and plot the Bayesian errors in the notebook exemple. 
 
 # Acknowledgments 
 `parse_regfile.sh` and `mae_rmse.py` are adapted from codes that were initially written by Johan Klarbring.
