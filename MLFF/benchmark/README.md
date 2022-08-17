@@ -3,7 +3,7 @@ The only way you can have confidence in the results produced by a newly trained 
 1. Against data that was _seen_ during training.
 2. Against data that was _not seen_ during training.
 
-Good practice involves first benchmarking against seen data. Once satisfied, the only way to build true confidence in an MLFF is by testing it against unseen data. To do so, one has to build a new data set from _ab initio_ Molecular Dynamics (AIMD) using different random seeds.
+Good practice involves first benchmarking against seen data. Once satisfied, the only way to build true confidence in an MLFF is by testing it against unseen data. To do so, one has to build a new data set from _ab initio_ Molecular Dynamics (AIMD), or MLFF-MD using different random seeds. As a final check, one should also look at the Bayesian errors of the production runs.
 
 # Workflow
 
