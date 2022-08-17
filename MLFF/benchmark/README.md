@@ -1,9 +1,9 @@
 # The importance of benchmarking
-The only way you can have confidence in the results produced by a newly trained Machine Learning Force Field (MLFF) is by benchmarking it. There are two ways to benchmark an MLFF:
+The only way to have confidence in the results produced by a newly trained Machine Learning Force Field (MLFF) is by benchmarking it. There are two ways to benchmark an MLFF:
 1. Against data that was _seen_ during training.
 2. Against data that was _not seen_ during training.
 
-Good practice involves first benchmarking against seen data. Once satisfied, the only way to build true confidence in an MLFF is by testing it against unseen data. To do so, one has to build a new data set from _ab initio_ Molecular Dynamics (AIMD), or MLFF-MD using different random seeds. As a final check, one should also look at the Bayesian errors of the production runs.
+Good practice involves first benchmarking against seen data. Once satisfied, the only way to build true confidence in an MLFF is by testing it against unseen data. To do so, one has to build a new data set from _ab initio_ Molecular Dynamics (AIMD), or MLFF-MD, using different random seeds. As a final check, one should also look at the Bayesian errors of the production runs.
 
 # Workflow
 
@@ -27,7 +27,7 @@ Good practice involves first benchmarking against seen data. Once satisfied, the
 Further benchmarking is encouraged.  For instance, one can benchmark an MLFF against the harmonic phonon dispersion, mean square displacements, or radial distribution functions.
 
 ## Production Runs
-Because we are never cautious enough, it is highly recommended to also check the Bayesian errors of the production runs. Run `BEEFgrep.sh` in your working directory and plot the Bayesian errors in the notebook exemple. 
+It is recommended to check the Bayesian errors of the production runs. Run `BEEFgrep.sh` in your working directory and plot the Bayesian errors in the notebook exemple. 
 
 # Acknowledgments 
 `parse_regfile.sh` and `mae_rmse.py` are adapted from codes that were initially written by Johan Klarbring.
