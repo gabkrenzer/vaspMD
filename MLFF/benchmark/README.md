@@ -14,7 +14,7 @@ Run in you working directory:
 2. `mae_rmse.py`, which prints Mean solute Errors (MAE), Root Mean Squared Errors (RMSE), and Maximum Absolute Errors (MaxAE) on energies, forces, and stresses.
 
 ## Unseen Data
-There are two ways to generate the unseen data with random seeds: from AIMD, or from MLFF-MD. Intuition suggests that AIMD will generate structures that are more different from the training configurations than MLFF-MD. Nevertheless, MLFF-MD is significantly cheaper and should be used where AIMD is too expensive, or does not allow to generate long-enough simulation times. 
+There are two ways to generate the unseen data with random seeds: from AIMD, or from MLFF-MD. Intuition suggests that AIMD will generate structures that are more different from the training configurations than MLFF-MD, since it will avoid 'data leakage' from the training into the validation. Nevertheless, MLFF-MD is cheaper and allows for longer simulations. If long enough simulations are used, MLFF-MD should provide better sampling of the potential energy surface than AIMD. At the same time, instances of 'data leakage' will be reduced. In a nutshell, MLFF-MD should be favoured over AIMD to generate the unseen dataset, especially in systems where AIMD is too expensive to generate long enough simulations.
 
 Random seeds are used to explore more of the potential surface and obtain a wider variety of structures. Structures obtained from different random seeds should not be considered separately. Together, they constitute the full dataset for a given temperature. 
 
