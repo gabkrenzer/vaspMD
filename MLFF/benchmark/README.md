@@ -5,6 +5,8 @@ The only way to have confidence in the results produced by a newly trained Machi
 
 Good practice involves first benchmarking against seen data. Once satisfied, the only way to build true confidence in an MLFF is by testing it against unseen data. To do so, one has to build a new data set from _ab initio_ Molecular Dynamics (AIMD), or MLFF-MD, using different random seeds. As a final check, one should also look at the Bayesian errors of the production runs.
 
+More on best practices can be found on the VASP websiite: https://www.vasp.at/wiki/index.php/Best_practices_for_machine-learned_force_fields
+
 # Workflow
 
 ## Seen Data
