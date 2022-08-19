@@ -28,7 +28,7 @@ for RANDOM_SEED in RANDOM_SEED_LIST:
             copy('POTCAR', path)
             copy('KPOINTS', path)
             copy('POSCAR', path)
-            copy('md.job', path)
+            copy('md.job', path) #update with job file name
         else:
             os.mkdir(parent_dir)
             directory = '0' + str(n) + '-trajectory'
@@ -38,6 +38,6 @@ for RANDOM_SEED in RANDOM_SEED_LIST:
             copy('POTCAR', path)
             copy('KPOINTS', path)
             copy('POSCAR', path)
-            copy('md.job', path)
+            copy('md.job', path) #update with job file name
         j = j + 1
     i = i + 1
