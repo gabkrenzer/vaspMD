@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #parser that randomly selects structures in an XDATCAR file and write the corresponding energies and forces to a file
 #this code is written to go over different independent trajectories carried out at different temperatures
+#the number of selected structures equals sample*n_seed
 
 import random
 import numpy as np
