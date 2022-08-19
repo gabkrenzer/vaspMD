@@ -8,9 +8,10 @@ Good practice involves first benchmarking against seen data. Once satisfied, the
 # Workflow
 
 ## Seen Data
-1. Run `parse_regfile.sh`, which greps useful data and prints the number of DFT calculations performed 
+Run in you working directory
+1. `parse_regfile.sh`, which greps useful data and prints the number of DFT calculations performed 
 (also a good indicator on whether the MLFF has been trained enough or not).
-2. Run `mae_rmse.py`, which prints Mean solute Errors (MAE), Root Mean Squared Errors (RMSE), and Maximum Absolute Errors (MaxAE) on energies, forces, and stresses.
+2. `mae_rmse.py`, which prints Mean solute Errors (MAE), Root Mean Squared Errors (RMSE), and Maximum Absolute Errors (MaxAE) on energies, forces, and stresses.
 
 ## Unseen Data
 1. Run `incars.py` to prepare AIMD simulations with different random seeds at different temperatures. 
