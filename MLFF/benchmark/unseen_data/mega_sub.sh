@@ -8,7 +8,7 @@ do
 	for NUM in #n_seed
 	do
 		echo $NUM	
-		cd $NUM-trajectory
+		cd 0${NUM}-trajectory
 		qsub md.job #update with job name
 		cd ../
 	done
