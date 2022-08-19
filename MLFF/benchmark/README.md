@@ -8,7 +8,7 @@ Good practice involves first benchmarking against seen data. Once satisfied, the
 # Workflow
 
 ## Seen Data
-Run in you working directory
+Run in you working directory:
 1. `parse_regfile.sh`, which greps useful data and prints the number of DFT calculations performed 
 (also a good indicator on whether the MLFF has been trained enough or not).
 2. `mae_rmse.py`, which prints Mean solute Errors (MAE), Root Mean Squared Errors (RMSE), and Maximum Absolute Errors (MaxAE) on energies, forces, and stresses.
