@@ -1,7 +1,7 @@
 # Heat Capacity Calculations From Molecular Dynamics
 The heat capacity can be extracted from Molecular Dynamics (MD) simulations run at different temperatures using two different methods:
 1. Computing the numerical derivative of energy, $E$, with respect to temperature, $T$: $C=\frac{dE}{dT}$.
-2. Using the equation: $C_{v}=\frac{\langeE^2\rangle-\langleE\rangle^2}{k_{B}T^2}$.
+2. Using the equation: $C_{v}=\frac{\lange E^2 \rangle-\langle E \rangle^2}{k_{B}T^2}$.
 
 Both methods should give similar results.
   
