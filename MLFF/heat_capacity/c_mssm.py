@@ -14,7 +14,6 @@ wd = '/path/to/working/directory/'
 T_master = []
 E_ms_master = []
 E_sm_master = []
-Cv_master = []
 
 def T_parse():
     T_list = [step['T'] for step in steps]
@@ -39,4 +38,4 @@ for T in range(TMIN, TMAX+1, TSTEP):
 C_array = (np.array(E_ms_master)-np.array(E_sm_master))/(kb*np.array(T_master)**2) #in eV/K
 C_array = C_array*conv*na/nb_of_formula #in J/(K.mol.formula_unit)
     
-np.savetxt('c_mssm.txt', np.array([T_master, Cv_array]))
+np.savetxt('c_mssm.txt', np.array([T_master, C_array]))
