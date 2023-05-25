@@ -36,5 +36,8 @@ Further benchmarking is encouraged.  For instance, one can benchmark an MLFF aga
 ## Production Runs
 It is recommended to check the Bayesian errors of the production runs. Run `BEEFgrep.sh` in your working directory and plot the Bayesian errors in the notebook exemple. 
 
+## Visualisation
+`benchmark_plot.ipynb` is a jupyter notebook to plot publication-ready figures of the benchmark.
+
 # Acknowledgments 
 `parse_regfile.sh` and `mae_rmse.py` are adapted from codes that were initially written by Johan Klarbring.
